@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".cards-first", {
     scrollTrigger: ".cards-first", //Inicia la animacion cuando ".texto" entra en el viewport (una vez)
-    y: 100,
-    duration: 2,
-   opacity: 0,
-   ease: "power1"
+    x: -200,
+    duration: 4,
+   opacity: 1,
+   ease: "power4"
 
   });
 gsap.from(".cards-sec", {
@@ -27,19 +27,19 @@ gsap.from(".cards-sec", {
 gsap.from(".card-1", {
     scrollTrigger: ".card-1", // start the animation when ".box" enters the viewport (once)
     y: 100,
-    duration: 0.5,
+    duration: 1,
    opacity: 0
   });
 gsap.from(".card-2", {
     scrollTrigger: ".card-2", // start the animation when ".box" enters the viewport (once)
     y: 100,
-    duration: 1,
+    duration: 2,
    opacity: 0
   });
 gsap.from(".card-3", {
     scrollTrigger: ".card-2", // start the animation when ".box" enters the viewport (once)
     y: 100,
-    duration: 1.5,
+    duration: 3,
    opacity: 0
   });
 

@@ -54,11 +54,11 @@ img {
 
 
 .site-header {
-	
-	background-image: linear-gradient(80deg, #7EB42A,#085D8A) ,url(../images/doctor-work.jpg);
-	background-position: center center;
+	/*  */
+	background-image:linear-gradient(80deg, #7EB42A,#085D8A) , url(../images/doctor-work.jpg);
+	background-position: 65% 50%;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; 
 	background-blend-mode: screen;
 	height:100%;
 	
@@ -66,6 +66,8 @@ img {
 @media (min-width: 768px) {
 	.site-header {
 		height: 100vh;
+		background-position: center center;
+		background-size: cover;
 	}
 }
 
@@ -267,6 +269,9 @@ img {
 .reverse{
 	flex-direction: row-reverse;
 }
+.main-text{
+	text-align: center;
+}
 .vision-main{
 	text-transform: uppercase;
 }
@@ -378,8 +383,8 @@ img {
 		line-height: 1.5rem;
 		background: linear-gradient(360deg,#ffffff,#247296) ;
 	}
+}
 	/* .card2-1,.card2-3{
-	}
 	.card2-2{
 		background: linear-gradient(360deg,#ffffff,#247296);
 	} */
@@ -404,7 +409,8 @@ img {
 	.article{
 		margin-top: 3rem;
 		margin-bottom: 3rem;
-		background: linear-gradient(-45deg, var(--color-), var(--color-primary)), url(../images/Medicos/fondo.jpg);
+		padding: 1rem;
+		background: linear-gradient(-45deg, var(--color-), var(--color-secondary)), url(../images/Medicos/fondo.jpg);
 		height: 100%;
 	}
 	@media (min-width: 786px){
@@ -430,7 +436,7 @@ img {
 			align-items: center;
 		}
 	}	
-}
+
 .section-ubication{
 	margin: 2rem 0;
 }
@@ -477,122 +483,3 @@ img {
 	}
 }
 
-
-/* 
-.seccion-anuncios {
-	display: flex;
-	flex-direction: column;
-	background-color: #01334a;
-	color: #fff;
-	font-size: 40px;
-	font-weight: 300;
-	padding: 20px;
-	margin: 2rem 0;
-}
-
-.anuncio{
-	width: 100%;
-}
-.seccion-anuncios a {
-	background-color: #f79007;
-	color: #fff;
-	font-weight: 600;
-	padding: 20px;
-	border-radius: 3px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 14px;
-	margin: 0px;
-}
-
-.btn-comienza {
-	display: flex;
-	justify-content: center;
-	margin: 0px;
-}
-.anuncio {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	padding-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-	.anuncio {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		column-gap: 10px;
-	}
-	.anuncio a {
-		justify-content: center;
-	}
-} */
-
-
-/**Paginas internas**/
-
-/* .header-precio {
-	margin: 0;
-	background-image: url(../images/header.jpg);
-	background-position-y: 960px;
-	background-position-x: -400px;
-	height: 240px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-
-
-
-
-.tarjetas {
-	background: linear-gradient(180deg, #c4c4c4, #25292a);
-	padding: 40px;
-}
-
-.tarjetas span {
-	font-size: 30px;
-}
-.contenido-precio {
-	padding: 20px;
-	justify-content: center;
-}
-
-@media (min-width: 760px) {
-	.contenido-precio {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-
-.tarjeta {
-	text-align: center;
-	border: 1px solid #000;
-	flex-basis: calc(33% - 10px);
-	margin: 16px 6px;
-	border-radius: 8px;
-	padding: 40px;
-}
-.tarjeta a {
-	display: flex;
-	justify-content: center;
-}
-
-.central {
-	background-color: #f79007;
-}
-@media (min-width: 768px) {
-	.central {
-		margin-top: -15px;
-		margin-bottom: 30px;
-	}
-}
-.izquierda {
-	background-color: #03a9f4;
-}
-.derecha {
-	background-color: aqua;
-} */

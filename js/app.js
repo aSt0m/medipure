@@ -67,60 +67,6 @@ gsap.from(".card2-3", {
 
 
 
-// gsap.from(".icono.fluido", {
-//     scrollTrigger: ".icono.fluido", // start the animation when ".box" enters the viewport (once)
-//     y: 100,
-//     duration: 2,
-//    opacity: 0
-//   });
-// gsap.from(".icono.amigable", {
-//     scrollTrigger: ".icono.amigable", // start the animation when ".box" enters the viewport (once)
-//     x: 100,
-//     duration: 2,
-//    opacity: 0
-//   });
-
-// gsap.from(".texto-2.ventaja", {
-//     scrollTrigger: ".texto-2.ventaja", // start the animation when ".box" enters the viewport (once)
-//     x: 100,
-//     duration: 2,
-//     opacity: 0
-//   });
-
-  
-// gsap.from(".icono.mejora", {
-//     scrollTrigger: ".icono.mejora", // start the animation when ".box" enters the viewport (once)
-//     x: -100,
-//     duration: 2,
-//    opacity: 0
-//   });
-
-// gsap.from(".icono.oportunidades", {
-//     scrollTrigger: ".icono.oportunidades", // start the animation when ".box" enters the viewport (once)
-//     y: -100,
-//     duration: 2,
-//    opacity: 0
-//   });
-// gsap.from(".icono.marketing", {
-//     scrollTrigger: ".icono.marketing", // start the animation when ".box" enters the viewport (once)
-//     y: 100,
-//     duration: 2,
-//    opacity: 0
-//   });
-// gsap.from(".icono.datos", {
-//     scrollTrigger: ".icono.datos", // start the animation when ".box" enters the viewport (once)
-//     x: 100,
-//     duration: 2,
-//    opacity: 0
-//   });
-
-//   gsap.from("#comienza", {
-//     scrollTrigger: "#comienza", // start the animation when ".box" enters the viewport (once)
-//     duration: 2,
-//     opacity: 0,
-//     scale:2
-//   });
-
 
 
   

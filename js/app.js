@@ -1,7 +1,7 @@
 var time = gsap.timeline();
 
 time.from('#titulo', { duration: 1, x: -150 });
-// time.to('#bot', { duration: 1, scale: 1.12, yoyo: true},"-=0.5");
+// time.to('.img-article', { duration: .5, scale: 1.42, yoyo: },"-=0.5");
 time.from('#paragraph', { duration: 1.5, y: 100, opacity: 0 });
 time.from('#contrata', { duration: 1, opacity: 0, ease: 'bounce' });
 
@@ -59,6 +59,12 @@ gsap.from(".card2-3", {
     scrollTrigger: ".card2-3", // start the animation when ".box" enters the viewport (once)
     x: 100,
     duration: 3,
+   opacity: 0
+  });
+gsap.from(".img-article", {
+    scrollTrigger: ".img-article", // start the animation when ".box" enters the viewport (once)
+    y: 100,
+    duration: 1,
    opacity: 0
   });
 

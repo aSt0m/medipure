@@ -56,7 +56,7 @@ img {
 .site-header {
 	/*  */
 	background-image:linear-gradient(80deg, #7EB42A,#085D8A) , url(../images/doctor-work.jpg);
-	background-position: 65% 50%;
+	background-position: 65% 70%;
 	background-size: cover;
 	background-repeat: no-repeat; 
 	background-blend-mode: screen;
@@ -100,11 +100,12 @@ img {
 	}
 }
 .logo {
-	height: 100%;
+	height: 6rem;
+	width: 6rem;
 	
 }
-.logo img {
-	height: 100%;
+.logo-header {
+	
 	padding: 2rem;
 }
 @media (min-width: 768px){

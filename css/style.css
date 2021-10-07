@@ -73,16 +73,16 @@ img {
 	}
 }
 .logo {
-	height: 6rem;
-	width: 6rem;
-	
+	height: 8rem;
+	width: 8rem;
 }
-.logo-header {
-	padding: 2rem;
+.img-logo{
+	height: 100%;
 }
 @media (min-width: 768px){
-	.logo img{
-		padding: 0;
+	.img-logo{
+		height: 100%;
+		padding: 1rem;
 	}
 }
 .enlaces a {
@@ -159,12 +159,18 @@ img {
 	}
 }
 .title-header {
+	font-size: 2rem;
 	color: #24789E;
 	font-weight: 700;
-	font-size: 3.2rem;
 	text-transform: uppercase;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+}
+@media (min-width: 768px){
+	.title-header{
+		font-size: 3.2rem;
+	} 
+	
 }
 .paragraph-header {
 	margin-bottom: 2rem;

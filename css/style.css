@@ -13,6 +13,7 @@ html {
 	--color-: #085D8A; 	
 }
 body{
+	line-height: 1.5;
 	font-family: 'Open Sans', sans-serif;
 	color: #25292a;
 }
@@ -29,22 +30,10 @@ img {
 	margin: 0 auto;
 	background: none;
 }
-.btn {
-	display: block;
-	padding: 20px;
-	color: var(--color-negro);
-	text-decoration: none;
-	border-radius: 10px;
-}
-.btn-bl {
-	background-color: #03a9f4;
-}
-.btn-ye {
-	background-color: #f79007;
-}
+
+
 .site-header {
-	/*  */
-	background-image:linear-gradient(80deg, #7EB42A,#085D8A) , url(../images/doctor-work.jpg);
+	background-image:url(../images/doctor-work.jpg);
 	background-position: 65% 70%;
 	background-size: cover;
 	background-repeat: no-repeat; 
@@ -172,15 +161,14 @@ img {
 .title-header {
 	color: #24789E;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 3.2rem;
 	text-transform: uppercase;
 	margin-top: 1rem;
-	margin-bottom: 0;
+	margin-bottom: 1rem;
 }
 .paragraph-header {
-	margin: 0;
+	margin-bottom: 2rem;
 	font-size: 14px;
-	line-height: 23px;
 	letter-spacing: 2px;
 	color: #24789E;
 }
@@ -193,6 +181,7 @@ img {
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
+	text-transform: Capitalize;
 } 
 @media (min-width: 768px){
 	.btn-blue{
@@ -299,9 +288,16 @@ img {
 	line-height: 1.5rem;
 	list-style: square;
 }
+.text-objetivos{
+	line-height: 1.5;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
 @media (min-width: 768px){
 	.section-objetivos{
-		height: 40vh;
+		height: 50vh;
 		margin-bottom: 8rem;
 	}	
 	.section-objetivos-container{
@@ -311,14 +307,15 @@ img {
 		height: 35vh;		
 	}
 	.text-objetivos{
+		font-size: 1.1rem;
 		text-align: center;
 		padding-top: 1rem;
-		color: rgb(197, 174, 174);
+		
 	}
 	.objetivos-card__container{	
 		display: flex;
 		position: absolute;
-		bottom: -60%;
+		bottom: -100%;
 	}
 	.card-objetivos{
 		display: flex;
@@ -328,35 +325,106 @@ img {
 		height: 35vh;
 		width: 16rem;
 		text-align: center;
-		color: #085D8A; 
+		color: #ffffff; 
 		/* border: 1px solid rgb(168, 160, 160); */
 		/* border-radius: 6px; */
 		list-style: none;
 		background: var(--color-primary);
 		padding: 1.5rem;
-		margin: 0rem 1px 2rem ;
+		margin: 0rem 5px 2rem ;
 		line-height: 1.5rem;
-		background: linear-gradient(360deg,#ffffff,#247296) ;
+		background: #2b5264;
+		
+		inset: 3px 4px 50px;
+		/* background: linear-gradient(360deg,#ffffff,#247296) ; */
 	}
 }
 	.section-team{
-		margin: 3rem 0;
-		background:rgba(97, 121, 228, 0.1);
+		
+		background-image:linear-gradient(45deg,rgb(38, 47, 48),#000), url(../images/medical-discussion.jpg);
+		background-position: 40% 20%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: screen;
+		
 	}
+	@media (min-width: 768px){
+		.section-team{
+			margin-top: 12rem;
+			
+		}	
+
+	}
+
 	.title-team{
+		text-shadow: 1px 1px rgb(133, 123, 123);
 		text-transform: uppercase;
 		text-align: center;
 	}
 	.team-container{
 		padding: 1rem;
+		
+		
+	}
+	.team-list{
+		padding: 2rem;
+		line-height: 1.5;
+
 	}
 	.list-team{
+		color: var(--color-);
 		list-style-position:inside;
 		list-style-type:square;
 		line-height: 1.5rem;
 	}
+	.section-date{
+		background: #0B486B;
+		height: 35vh;
+		margin: 0;
+	}
+	.container-date{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.title-date{
+		font-size: 1.6rem;
+		letter-spacing: 5px;
+		font-weight: lighter;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	@media (min-width: 768px){
+		.title-date{
+			font-size: 2.2rem;
+			
+		}
+	}
+	.button-date{
+		width: 30vh;
+		background: #f79007; 
+		padding: 1rem;
+		color: var(--color-negro);
+		text-decoration: none;
+		text-align: center;
+		border-radius: 10px;
+		margin-bottom: 1rem;
+	}
+	@media (min-width: 768px){
+		.container-date{
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.button-date{
+			margin-bottom: 0;
+		}
+	}
 	.article{
-		margin-top: 3rem;
+		/* margin-top: 3rem; */
 		margin-bottom: 3rem;
 		padding: 1rem;
 		background: linear-gradient(-45deg, var(--color-), var(--color-secondary)), url(../images/Medicos/fondo.jpg);
@@ -368,6 +436,7 @@ img {
 		}
 	}
 	.paragraph-article{
+		line-height: 1.5;
 		color: #fff;
 		text-align: center;
 		padding: 1rem;
@@ -384,6 +453,7 @@ img {
 	}	
 .section-ubication{
 	margin: 2rem 0;
+	
 }
 .ubication-container{
 	display: flex;
@@ -394,6 +464,7 @@ img {
 .title-ubication{
 	text-transform: capitalize;
 }
+
 .site-footer{
 	height: 15vh;
 	width: 100%;
@@ -410,6 +481,12 @@ img {
 .img-social-media{
 	padding: 5px;
 	height: 2.5rem;
+}
+.fb{
+	display: none;
+}
+.tw{
+	display: none;
 }
 .fb:hover,
 .tw:hover,

@@ -78,6 +78,7 @@ img {
 }
 .img-logo{
 	height: 100%;
+	object-fit: cover;
 }
 @media (min-width: 768px){
 	.img-logo{

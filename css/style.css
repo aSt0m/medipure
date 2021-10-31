@@ -286,9 +286,10 @@ img {
 		margin: 0 2rem;
 	}
 }
+/* Section Objetivos */
 .section-objetivos{
 	height: 100%;
-	background: linear-gradient(45deg, var(--color-secondary) 80%,var(--color-primary) );
+	background: var(--color-);
 	padding: 2rem;
 }
 .card-objetivos{
@@ -384,6 +385,82 @@ img {
 		list-style-type:square;
 		line-height: 1.5rem;
 	}
+	/* Section Doctor */
+	.section-doctor{
+		margin: 0;
+		padding: 0;
+	}
+	.title-doctor{
+		text-transform: capitalize;
+
+	}
+	.doctor-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+	}
+	.cards-doctor{
+		margin: 1rem;
+	}
+	.img-doctor{
+		border-radius: 50%;
+
+	}
+	/* Section invest */
+	.section-invest{
+		margin: 0;
+		padding: 0;
+	}
+	.title-invest{
+		text-transform: capitalize;
+
+	}
+	.invest-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+	}
+	.cards-invest{
+		margin: 1rem;
+	}
+	.img-invest{
+		border-radius: 50%;
+
+	}
+
+	/* Section Gallery */
+	.section-gallery{
+		margin: 2rem;
+	}
+	.gallery-container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: .5rem;
+		column-gap: .5rem;
+	}
+	.img-gallery{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.container-img-gallery:nth-child(1) {
+		grid-column-start: span 2;
+
+	}
+	.container-img-gallery:nth-child(5){
+		grid-column-start: span 2;
+	}
+	.container-img-gallery:nth-child(3){
+		grid-row-start: span 2;
+	}
+	
+
+
 	.section-date{
 		background: #0B486B;
 		height: 35vh;
@@ -431,7 +508,6 @@ img {
 		}
 	}
 	.article{
-		/* margin-top: 3rem; */
 		margin-bottom: 3rem;
 		padding: 1rem;
 		background: linear-gradient(-45deg, var(--color-), var(--color-secondary)), url(../images/Medicos/fondo.jpg);

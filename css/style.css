@@ -318,67 +318,94 @@ img {
 .card-objetivos {
   line-height: 1.5rem;
   list-style: square;
+  text-align: center;
+  margin: 4px;
 }
-.text-objetivos {
-  line-height: 1.5;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+
+.contenido-objetivos{
+  
+  list-style:circle;
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {
   .section-objetivos {
-    height: 50vh;
-    margin-bottom: 14rem;
+    padding: 0;
+    height: 90vh;
+    
   }
   .section-objetivos-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 35vh;
+    
+  }
+  .title-section-objectivos{
+    margin: 0;
+    color: rgb(238, 230, 230);
   }
   .text-objetivos {
+    color: rgb(238, 230, 230);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
     text-align: center;
     padding-top: 1rem;
+
+    
   }
   .objetivos-card__container {
     display: flex;
     position: absolute;
-    bottom: -80%;
+    bottom: -140%;
 	
   }
+  
   .objetivos-card__container.up{
     display: flex;
     position: absolute;
-    bottom: 60%;
+    bottom: -50%;
   }
   .card-objetivos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 25vh;
+    height: 10rem;
     width: 16rem;
     text-align: center;
     color: #ffffff;
     list-style: none;
     background: var(--color-primary);
     padding: 1.5rem;
-    margin: 0rem 5px 2rem;
+    margin:  0 1rem;
     line-height: 1.5rem;
     background: #2b5264;
-    inset: 3px 4px 50px;
-  
+    position: relative;
+    
+  }
+
+  .card-objetivos:nth-child(odd){
+    border-radius: 2rem 0 
+  }
+  .card-objetivos:nth-child(even){
+    border-radius: 0 2rem;
+  } 
+  .contenido-objetivos{
+    margin: 0;
+    list-style: none;
+    
+    
   }
 }
 
 /* Section Doctor */
 .section-doctor {
-	/* padding: 2rem; */
+
 	background: rgba(55, 108, 189, 0.3);
 	background-position: center center;
 background-size: cover;
@@ -474,101 +501,94 @@ background-blend-mode: screen;
 background-size: cover;
 background-blend-mode: screen;
 }
-
-
+.title-invest {
+    text-transform: capitalize;
+  margin: 0;
+  padding-top: 2rem;
+}
 .invest-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	margin: 0 auto;
 }
-.invest-container:nth-child(3){
-  font-size: .5rem;
+.cards-invest{
+ 
+  display: flex;
+  position: relative;
+  background: #fff;
+  margin: 2rem .5rem;
+  height: 14rem;
+  width: 85%;
+  border-radius: 8px;
 }
-
-.title-invest {
-  	text-transform: capitalize;
-  margin: 0;
-  padding-top: 2rem;
-}
-
 
 
 @media (min-width: 786px){
 	.invest-container{
-		flex-direction: row;
-		justify-content: space-evenly;
+		/* flex-direction: row;
+		justify-content: space-evenly; */
+    flex-direction: row;
+		justify-content: space-around;
+    align-items: center
 	}
+  .cards-invest{
+    border-radius: 2px;
+    width: 90%;
+    height: 15rem;
+    margin: 4rem .5rem;
+  }
 }
-
 .container-img-invest{
 	height: 3rem;
 	
 }
 .img-invest{
 	
-	top: -100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	background: #fff;
+
+  top: 35%;
+  left: -3rem;
+  
+  background: #fff;
 	position: absolute;
 	border-radius: 50%;
   height: 5rem;
   padding: .4rem;
+
+}
+@media (min-width: 768px){
+  .img-invest{
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+ } 
 }
 .container-text-invest{
   
+
+  width: 100%;
 	height: 100%;
 	line-height: 1.4;
 	padding: 2rem;
   text-align: center;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .name-invest{
-  margin: 0;
+  margin: 0 ;
 }
 .paragraph-cards{
   margin: 0;
 }
 
-.cards-invest{
-  width: 100%;
-  height: 20rem;
-	border-radius: 2px;
-  background: #fff;
-  margin: 3rem .5rem;
-  position: relative;
-}
-@media(min-width: 768px){
-  .cards-invest{
-    width: 20%;
-  }
-}
-.img-invest {
-  top: -100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	background: #fff;
-	position: absolute;
-	border-radius: 50%;
-  height: 5rem;
-  padding: .4rem;
-}
 
 /* Section Gallery */
-.section-gallery {
 
-  
-}
 .title-gallery{
 	padding: 2rem 0; 
 	text-transform: capitalize;
@@ -596,7 +616,7 @@ background-blend-mode: screen;
   .gallery-container {
     padding-top: 2rem;
     grid-template-columns: repeat(6,12rem);
-    gap: 0.5rem ; 
+    column-gap: 0.5rem ; 
     -moz-column-gap: 0.5rem;
     justify-content: center;
     

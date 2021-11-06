@@ -21,7 +21,7 @@ img {
   max-width: 100%;
 }
 .white{
-  color: #fff !important;
+  color: #999999;
 }
 .centrar {
   text-align: center;
@@ -193,13 +193,8 @@ img {
   letter-spacing: 2px;
   color: #24789e;
 }
-/* @media (min-width: 768px){
-  .paragraph-header{
-    font-size: .6rem;
-  }
-} */
+
 .container-tel{
- 
   margin: 1rem 0;
   width: 60%;
   height:  auto;
@@ -216,7 +211,6 @@ img {
     justify-content: center;
   }
   .tel{
-
     margin-right: 2rem;
   }
 }
@@ -581,8 +575,8 @@ background-blend-mode: screen;
 	}
   .cards-invest{
     border-radius: 2px;
-    width: 90%;
-    height: 15rem;
+    width: 20%;
+    height: 18rem;
     margin: 4rem .5rem;
   }
 }

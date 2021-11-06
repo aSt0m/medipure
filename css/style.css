@@ -203,9 +203,9 @@ img {
   margin: 1rem 0;
   width: 60%;
   height:  auto;
-  /* display: flex;
+  display: flex;
   justify-content: space-evenly;
-  align-items: center; */
+  align-items: center; 
   display: none;
 }
 

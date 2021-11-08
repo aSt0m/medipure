@@ -542,7 +542,7 @@ background-blend-mode: screen;
     justify-content:stretch;
     font-size: .9rem;
   }
-  .container-text-doctor:nth-of-type(3){
+  .container-text-doctor:nth-of-type(6){
     background: #000;
   }
 
@@ -563,7 +563,6 @@ background-size: cover;
 background-blend-mode: screen;
 }
 .title-invest {
-    text-transform: capitalize;
   margin: 0;
   padding-top: 2rem;
 }
@@ -588,8 +587,7 @@ background-blend-mode: screen;
 
 @media (min-width: 786px){
 	.invest-container{
-		/* flex-direction: row;
-		justify-content: space-evenly; */
+
     flex-direction: row;
 		justify-content: space-around;
     align-items: center
@@ -605,12 +603,9 @@ background-blend-mode: screen;
 	height: 3rem;
 	
 }
-.img-invest{
-	
-
+.img-invest{	
   top: 35%;
   left: -3rem;
-  
   background: #fff;
 	position: absolute;
 	border-radius: 50%;
@@ -628,8 +623,6 @@ background-blend-mode: screen;
  } 
 }
 .container-text-invest{
-  
-
   width: 100%;
 	height: 100%;
 	line-height: 1.4;

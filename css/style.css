@@ -86,8 +86,8 @@ img {
 }
 @media (min-width: 768px) {
   .logo {
-    height: 16rem;
-    width: 16rem;
+    height: 14rem;
+    width: 14rem;
     padding: 1rem;
   }
   .img-logo {
@@ -379,8 +379,9 @@ img {
   .section-objetivos {
     padding: 0;
     height: 100%;
+    
     display: flex;
-    flex-wrap: wrap;
+    
     
   }
   .section-objetivos-container {
@@ -390,6 +391,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100vh;
     
   }
   .title-section-objectivos{
@@ -401,7 +403,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     padding-top: 1rem;
 
@@ -416,12 +418,12 @@ img {
     justify-content: flex-start;
     align-items: center;
     height: 10rem;
-    width: 16rem;
+    width: 14rem;
     text-align: center;
     color: #ffffff;
     list-style: none;
     background: var(--color-primary);
-    padding: 1.5rem;
+    padding: 1rem;
     margin:  2rem 1rem;
     line-height: 1.5rem;
     background: #2b5264;   
@@ -550,6 +552,7 @@ background-blend-mode: screen;
 }
 /* Section invest */
 .section-invest { 
+  
 	background: rgba(55, 108, 189, 0.3);
 	background-position: center center;
 background-size: cover;

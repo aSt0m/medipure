@@ -21,7 +21,7 @@ img {
   max-width: 100%;
 }
 .white{
-  color: #999999;
+  color: #5C8D03;
 }
 .centrar {
   text-align: center;
@@ -351,11 +351,12 @@ img {
 /* Section Objetivos */
 .section-objetivos {
   height: 100%;
-  background: var(--color-);
+  background: rgb(11, 79, 124);
   padding: 2rem;
   
 }
 .card-objetivos {
+  color: #fff;
   line-height: 1.5rem;
   list-style: square;
   text-align: center;
@@ -367,28 +368,36 @@ img {
   list-style:circle;
   margin: 1rem;
 }
-
+.title-section-objectivos{
+  
+  color: rgb(223, 221, 221);
+}
+.text-objetivos {
+  color: #fff;
+}
 @media (min-width: 768px) {
   .section-objetivos {
     padding: 0;
-    height: 90vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     
   }
   .section-objetivos-container {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 100%;
     
   }
   .title-section-objectivos{
-    margin: 0;
-    color: rgb(238, 230, 230);
+    margin: 2rem 0;
+    
   }
   .text-objetivos {
-    color: rgb(238, 230, 230);
+    color: rgb(231, 231, 231);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,15 +409,6 @@ img {
   }
   .objetivos-card__container {
     display: flex;
-    position: absolute;
-    bottom: -140%;
-	
-  }
-  
-  .objetivos-card__container.up{
-    display: flex;
-    position: absolute;
-    bottom: -50%;
   }
   .card-objetivos {
     display: flex;
@@ -422,24 +422,32 @@ img {
     list-style: none;
     background: var(--color-primary);
     padding: 1.5rem;
-    margin:  0 1rem;
+    margin:  2rem 1rem;
     line-height: 1.5rem;
-    background: #2b5264;
+    background: #2b5264;   
     position: relative;
-    
   }
 
   .card-objetivos:nth-child(odd){
-    border-radius: 2rem 0 
+    border-radius: 2rem 0;
+    background: linear-gradient( 145deg, var(--color-), #0d1f2e );
+    box-shadow: 5px 5px 20px #1a2848, -3px -3px 20px #1976ac;
   }
+ 
   .card-objetivos:nth-child(even){
     border-radius: 0 2rem;
+    background: linear-gradient( 40deg , var(--color), #0d1f2e);
+    box-shadow: 5px 5px 20px #1a2848, -5px -5px 20px #0871ad;
   } 
+  .numero{
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
   .contenido-objetivos{
     margin: 0;
-    list-style: none;
-    
-    
+    list-style: none; 
+    position: relative;
+    z-index: 100;
   }
 }
 
@@ -526,6 +534,12 @@ background-blend-mode: screen;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px){
+  .container-text-doctor{
+    padding-top: 4rem;
+    justify-content:stretch
+  }
 }
 
 .name-doctor{
@@ -618,6 +632,16 @@ background-blend-mode: screen;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px){
+  .container-text-invest{
+    padding-top: 4rem;
+    justify-content: flex-start; 
+  }
+  .cards-doctor:nth-child(1){
+    order: 5;
+  }
+
 }
 .name-invest{
   margin: 0 ;

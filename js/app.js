@@ -3,7 +3,8 @@ var time = gsap.timeline();
 time.from('#titulo', { duration: 1, x: -150 });
 // time.to('.img-article', { duration: .5, scale: 1.42, yoyo: },"-=0.5");
 time.from('#paragraph', { duration: 1.5, y: 100, opacity: 0 });
-time.from('#contrata', { duration: 1, opacity: 0, ease: 'bounce' });
+time.from('.container-tel', { duration: 1, opacity: 0, ease: 'bounce'});
+time.from('#contrata', { duration: 3, opacity: 0, ease: 'bounce' });
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,9 +25,9 @@ gsap.from(".cards-sec", {
 
   });
 
-gsap.from(".card-1", {
-    scrollTrigger: ".card-1", // start the animation when ".box" enters the viewport (once)
-    y: 100,
+gsap.from(".cards-doctor", {
+    scrollTrigger: ".cards-doctor", // start the animation when ".box" enters the viewport (once)
+    y: -100,
     duration: 1,
    opacity: 0
   });
@@ -37,33 +38,16 @@ gsap.from(".card-2", {
    opacity: 0
   });
 gsap.from(".card-3", {
-    scrollTrigger: ".card-2", // start the animation when ".box" enters the viewport (once)
+    scrollTrigger: ".card-3", // start the animation when ".box" enters the viewport (once)
     y: 100,
     duration: 3,
    opacity: 0
   });
 
-gsap.from(".card2-1", {
-    scrollTrigger: ".card2-1", // start the animation when ".box" enters the viewport (once)
-    x: -100,
-    duration: 3,
-   opacity: 0
-  });
-gsap.from(".card2-2", {
-    scrollTrigger: ".card2-2", // start the animation when ".box" enters the viewport (once)
-    y: 100,
-    duration: 3,
-   opacity: 0
-  });
-gsap.from(".card2-3", {
-    scrollTrigger: ".card2-3", // start the animation when ".box" enters the viewport (once)
-    x: 100,
-    duration: 3,
-   opacity: 0
-  });
+
 gsap.from(".img-article", {
     scrollTrigger: ".img-article", // start the animation when ".box" enters the viewport (once)
-    y: 100,
+    y: 10,
     duration: 1,
    opacity: 0
   });
